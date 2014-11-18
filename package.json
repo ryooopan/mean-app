@@ -6,6 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bower": "1.2.8", 
     "express": "3.4.0",
     "jade": "*"
   }
