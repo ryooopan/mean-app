@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  input(type='text' ng-model='yourName' placeholder='Enter')
+
+  h1 Hello {{yourName}}
+
+  div(ng-controller='ToDoController')
+    span {{remaining()}} of {{todos.length}} remaing
+      a(href='' ng-click='archive()') archive
+
+      ul.unstyled
+        inpu(type='checkbox' ng-model='todo.done')
+        span(class='done-{{todo.done}}') {{todo.text}}
+
+
+  h1(ng-controller='HelloWorldController')
+    {{ message }}
+
+  div(ui-ace)
+  div(ace='json' ng-model='bitchin')
+    textarea(name='tutorial[contents]')
+
+  div#editor
+
+  div#contents
+  value: {{ bitchin }}
+
