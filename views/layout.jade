@@ -1,5 +1,5 @@
 doctype html
-html(ng-app)
+html(ng-app='myApp')
   head
     title= title
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
@@ -10,6 +10,8 @@ html(ng-app)
     script(src='/bower_components/angular/angular.js')
     script(src='/bower_components/angular-ui-ace/ui-ace.js')
     script(src='/bower_components/ace-builds/src/ace.js')
+    script(src='/javascripts/app.js') 
+    script(src='/javascripts/controllers.js') 
     script(src='/javascripts/script.js')      
   body
     block content

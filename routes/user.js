@@ -4,5 +4,12 @@
  */
 
 exports.list = function(req, res){
-  res.send("respond with a resource");
+  var users = [
+    { name: 'Ryo', email: 'ryo@gmail.com' },
+    { name: 'Shohei', email: 'shohei@gmail.com' },
+    { name: 'Shu', email: 'shu@gmail.com' }
+  ];
+  res.render('users', {
+    users: users
+  });
 };

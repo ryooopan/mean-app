@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div(ng-controller='UserCtrl')
+    h1 Hello {{name}}
+  
+    ul
+      li(ng-repeat='user in users')
+        p {{user.name}}
+
